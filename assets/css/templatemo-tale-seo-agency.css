@@ -79,6 +79,8 @@ header, nav, section, article, aside, footer, hgroup {
 html, body {
   font-family: 'Open Sans', sans-serif;
   -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -140,7 +142,6 @@ body {
   display: inline-block;
   border-radius: 25px;
   font-weight: 400;
-  text-transform: capitalize;
   letter-spacing: 0.5px;
   transition: all .3s;
   position: relative;
@@ -149,7 +150,7 @@ body {
 
 .main-button a:hover {
   background-color: #80b53f;
-  color: #fff;
+  color: #80b53f;
   opacity: 0.8;
 }
 
@@ -161,7 +162,6 @@ body {
   display: inline-block;
   border-radius: 25px;
   font-weight: 400;
-  text-transform: capitalize;
   letter-spacing: 0.5px;
   transition: all .3s;
   position: relative;
@@ -169,7 +169,7 @@ body {
 }
 
 .second-button a:hover {
-  background-color: #c03afe;
+  background-color: #80b53f;
   color: #fff;
   opacity: 0.8;
 }
@@ -195,7 +195,6 @@ body {
 .section-heading h2 {
   color: #2a2a2a;
   font-size: 30px;
-  text-transform: capitalize;
   text-decoration: none;
   margin-bottom: 30px;
   line-height: 44px;
@@ -438,14 +437,14 @@ Header Style
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
-  color: #fff;
-  opacity: 0.8;
+  color: #80b53f;
+  opacity: 0.5;
 }
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
-  color: #fff;
-  opacity: 0.8;
+  color: #80b53f;
+  opacity: 0.5;
 }
 
 .header-area .main-nav .nav li.has-sub {
@@ -469,7 +468,7 @@ Header Style
 
 .header-area .main-nav .nav li.has-sub ul.sub-menu {
   position: absolute;
-  width: 160px;
+  width: 500px;
   border-radius: 0px 0px 5px 5px;
   background-color: #eee;
   box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
@@ -516,7 +515,7 @@ Header Style
 
 .header-area .main-nav .nav li.has-sub ul li a:hover {
   background: #90b366;
-  color: #80b53f!important;
+  color: #eee!important;
   padding-left: 25px;
 }
 
@@ -555,7 +554,7 @@ Header Style
   -o-transition: all 0.4s;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  background-color: #fff;
+  background-color: #80b53f;
   display: block;
   position: absolute;
   width: 30px;
@@ -569,7 +568,7 @@ Header Style
   -o-transition: all 0.4s;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  background-color: #fff;
+  background-color: #80b53f;
   display: block;
   position: absolute;
   width: 30px;
@@ -616,7 +615,7 @@ Header Style
   -ms-transform: translateY(6px) translateX(1px) rotate(45deg);
   -webkit-transform: translateY(6px) translateX(1px) rotate(45deg);
   transform: translateY(6px) translateX(1px) rotate(45deg);
-  background-color: #fff;
+  background-color: #80b53f;
 }
 
 .background-header .main-nav .menu-trigger.active span:before {
@@ -628,7 +627,7 @@ Header Style
   -ms-transform: translateY(-6px) translateX(1px) rotate(-45deg);
   -webkit-transform: translateY(-6px) translateX(1px) rotate(-45deg);
   transform: translateY(-6px) translateX(1px) rotate(-45deg);
-  background-color: #fff;
+  background-color: #80b53f;
 }
 
 .background-header .main-nav .menu-trigger.active span:after {
@@ -817,7 +816,7 @@ Header Style
 }
 
 .pre-header ul li a:hover {
-  color: #c03afe;
+  color: #80b53f;
 }
 
 /* 
@@ -2090,4 +2089,41 @@ body {
   width: 300px;
   display: flex;
   
+}
+
+#fullscreen-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(0, 0%, 0%, 0.74); /* Fondo oscuro */
+  text-align: center;
+  z-index: 9999;
+}
+
+#fullscreen-image {
+  max-width: 90%;
+  max-height: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: contain;
+}
+
+.logo-gp {
+  max-width: 112px;
+}
+
+#imagenPrincipal {
+  max-width: 100%; 
+  max-height: 100vh; 
+  margin: auto;
+}
+
+.py-4 {
+  margin-top: 120px; 
+  background-color: #80b53f;
 }
