@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mis Enlaces</title>
+    <title>Gráficas Personales</title>
+    <!-- Agregar enlaces a los archivos CSS de Bootstrap si aún no están incluidos -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,7 +16,7 @@
         }
 
         header {
-            background-color: #333;
+            background-color: #80b53f;
             color: #fff;
             padding: 20px;
         }
@@ -29,20 +31,80 @@
             padding: 20px;
         }
 
-        .enlace {
+        .logo {
+            display: block;
+            margin: 0 auto 20px;
+            width: 150px; 
+        }
+
+        .enlace-cian {
             display: block;
             margin: 20px 0;
             font-size: 18px;
             text-decoration: none;
-            color: #333;
-            background-color: #fff;
+            color: #fff;
+            background-color: #00bcd4;
             padding: 15px;
             border-radius: 10px;
             transition: background-color 0.2s, transform 0.2s;
         }
 
-        .enlace:hover {
-            background-color: #ff4500;
+        .enlace-cian:hover {
+            background-color: #0097a7;
+            color: #fff;
+            transform: scale(1.05);
+        }
+
+        .enlace-magenta {
+            display: block;
+            margin: 20px 0;
+            font-size: 18px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #e91e63;
+            padding: 15px;
+            border-radius: 10px;
+            transition: background-color 0.2s, transform 0.2s;
+        }
+
+        .enlace-magenta:hover {
+            background-color: #c2185b;
+            color: #fff;
+            transform: scale(1.05);
+        }
+
+        .enlace-amarillo {
+            display: block;
+            margin: 20px 0;
+            font-size: 18px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #ffc107;
+            padding: 15px;
+            border-radius: 10px;
+            transition: background-color 0.2s, transform 0.2s;
+        }
+
+        .enlace-amarillo:hover {
+            background-color: #ffab00;
+            color: #fff;
+            transform: scale(1.05);
+        }
+
+        .enlace-verde {
+            display: block;
+            margin: 20px 0;
+            font-size: 18px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #4caf50; /* Cambiado a verde */
+            padding: 15px;
+            border-radius: 10px;
+            transition: background-color 0.2s, transform 0.2s;
+        }
+
+        .enlace-verde:hover {
+            background-color: #45a049; /* Cambiado a verde más oscuro */
             color: #fff;
             transform: scale(1.05);
         }
@@ -50,14 +112,29 @@
 </head>
 <body>
     <header>
-        <h1>Mis Enlaces</h1>
+        <img class="logo" src="./assets/images/logo.png" alt="Logo">
+        <h1>Gráficas Personales</h1>
     </header>
     <div class="container">
-        <a class="enlace" href="https://www.instagram.com/tu_usuario/">Instagram</a>
-        <a class="enlace" href="https://www.facebook.com/tu_pagina/">Facebook</a>
-        <a class="enlace" href="https://twitter.com/tu_usuario/">Twitter</a>
-        <a class="enlace" href="https://www.linkedin.com/in/tu_perfil/">LinkedIn</a>
-        <a class="enlace" href="https://www.tusitio.com/">Sitio Web</a>
+        <!-- Enlace de WhatsApp -->
+        <a class="enlace-cian" href="https://wa.me/541144272984">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+        <!-- Enlace de Instagram -->
+        <a class="enlace-magenta" href="https://www.instagram.com/graficaspersonales">
+            <i class="fab fa-instagram"></i> Instagram
+        </a>
+        <!-- Enlace de Sitio Web -->
+        <a class="enlace-amarillo" href="https://www.tusitio.com">
+            <i class="fas fa-globe"></i> Sitio Web
+        </a>
+        <!-- Botón de Link de Pago -->
+        <a class="enlace-verde" href="#">
+            Link de Pago
+        </a>
     </div>
+
+    <!-- Agregar enlace al archivo JS de Bootstrap al final del cuerpo si aún no está incluido -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>
 </html>
